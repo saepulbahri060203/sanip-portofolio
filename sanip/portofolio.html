@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Muhamad Sanip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #fff0f0;
+        color: #4b1c1c;
+      }
+
+      nav {
+        background: linear-gradient(to right, #d32f2f, #b71c1c);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      nav h1 {
+        font-size: 1.7rem;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+
+      nav ul li {
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      nav ul li:hover {
+        color: #ffe082;
+      }
+
+      .jumbotron {
+        background: linear-gradient(to bottom right, #f44336, #b71c1c);
+        color: white;
+        text-align: center;
+        padding: 4rem 2rem;
+        box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+      }
+
+      .jumbotron img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 5px solid white;
+        margin-bottom: 1rem;
+        object-fit: cover;
+      }
+
+      .jumbotron h2 {
+        font-size: 2.8rem;
+        margin-bottom: 0.3rem;
+      }
+
+      .jumbotron p {
+        font-size: 1.1rem;
+      }
+
+      .section {
+        max-width: 1000px;
+        margin: 3rem auto;
+        padding: 0 2rem;
+        text-align: center;
+      }
+
+      .section h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #c62828;
+        position: relative;
+      }
+
+      .section h3::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: #e53935;
+        margin: 8px auto;
+        border-radius: 2px;
+      }
+
+      .section p {
+        margin-bottom: 2rem;
+        font-size: 1rem;
+      }
+
+      .skills,
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .skill-box,
+      .project-box {
+        background: #ffe5e5;
+        padding: 1.2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .skill-box:hover,
+      .project-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        background: #ffebee;
+      }
+
+      .project-box h4 {
+        margin-bottom: 0.5rem;
+        color: #b71c1c;
+      }
+
+      .contact {
+        background: #fff8f8;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-top: 3rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      footer {
+        background-color: #b71c1c;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 3rem;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      /* Responsive Text Center */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        nav ul {
+          flex-direction: column;
+          gap: 1rem;
+          margin-top: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Sanip Portfolio</h1>
+      <ul>
+        <li>Beranda</li>
+        <li>Tentang</li>
+        <li>Keahlian</li>
+        <li>Proyek</li>
+        <li>Kontak</li>
+      </ul>
+    </nav>
+
+    <section class="jumbotron">
+      <img src="img/Screenshot 2025-06-30 104620.png" alt="Foto Muhamad Sanip" />
+      <h2>Muhamad Sanip</h2>
+      <p>Supervisor di PT Gajah Duduk • Ahli Excel & Desain Grafis</p>
+    </section>
+
+    <section class="section">
+      <h3>Tentang Saya</h3>
+      <p>
+        Saya adalah seorang Supervisor profesional di PT Gajah Duduk, berpengalaman dalam manajemen tim, Excel lanjutan, dan desain visual. Saya memiliki komitmen tinggi untuk efisiensi, inovasi, dan terus mengembangkan diri dalam dunia
+        kerja modern.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>Keahlian</h3>
+      <div class="skills">
+        <div class="skill-box">Microsoft Excel (Pivot, Formula, Macro)</div>
+        <div class="skill-box">Desain Grafis (Canva & CorelDraw)</div>
+        <div class="skill-box">Manajemen Operasional</div>
+        <div class="skill-box">Public Speaking</div>
+        <div class="skill-box">Team Leader</div>
+        <div class="skill-box">Analisis Data</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Proyek Saya</h3>
+      <div class="projects">
+        <div class="project-box">
+          <h4>Absensi Otomatis Excel</h4>
+          <p>Sistem absensi otomatis dengan validasi dan grafik bulanan.</p>
+        </div>
+        <div class="project-box">
+          <h4>Desain Poster Produk</h4>
+          <p>Desain promosi brand lokal dengan pendekatan visual modern.</p>
+        </div>
+        <div class="project-box">
+          <h4>Dashboard Performa Tim</h4>
+          <p>Monitoring mingguan produktivitas karyawan.</p>
+        </div>
+        <div class="project-box">
+          <h4>Training Excel Internal</h4>
+          <p>Memberikan pelatihan internal kepada tim operasional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <h3>Kontak</h3>
+      <p>Hubungi saya jika Anda ingin bekerja sama atau berdiskusi.</p>
+      <p><strong>Email:</strong> m.sanip@email.com</p>
+      <p><strong>Telepon:</strong> 0812-3456-7890</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Muhamad Sanip • Dibuat dengan ❤️ dan semangat</p>
+    </footer>
+  </body>
+</html>
